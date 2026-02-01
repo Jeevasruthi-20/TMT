@@ -33,7 +33,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 relative">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="font-serif font-bold text-4xl lg:text-5xl text-foreground mb-6">
-              About Thangam Magalir Thaiyalagam
+               About Thangam Magalir Thaiyalagam
             </h1>
             <p className="text-lg lg:text-xl text-muted-foreground leading-relaxed">
               Empowering women through traditional crafts and professional tailoring education since our inception
@@ -135,10 +135,10 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { value: '500+', label: 'Students Trained' },
+              { value: '200+', label: 'Students Trained' },
               { value: '3', label: 'Specialized Courses' },
               { value: '1000+', label: 'Garments Stitched' },
-              { value: '5+', label: 'Years Experience' },
+              { value: '10+', label: 'Years Experience' },
             ].map((stat, index) => (
               <div key={index} className="text-center text-white">
                 <p className="font-serif font-bold text-3xl lg:text-4xl mb-2">{stat.value}</p>

@@ -28,7 +28,7 @@ export default function Header() {
               className="h-10 w-10 lg:h-12 lg:w-12 rounded-lg group-hover:scale-105 transition-transform object-cover"
             />
             <span className="font-serif font-bold text-lg lg:text-xl text-foreground">
-              Thangam Magalir Thaiyalagam
+              தங்கம் மகளிர் தையலகம்
             </span>
           </Link>
 

@@ -6,11 +6,15 @@ import HomePage from '@/pages/HomePage';
 import AboutPage from '@/pages/AboutPage';
 import ClassesPage from '@/pages/ClassesPage';
 import StitchingPage from '@/pages/StitchingPage';
+import PantsCategoryPage from '@/pages/PantsCategoryPage';
 import ChudiMeasurementPage from '@/pages/measurements/ChudiMeasurementPage';
 import PantsMeasurementPage from '@/pages/measurements/PantsMeasurementPage';
 import BlouseMeasurementPage from '@/pages/measurements/BlouseMeasurementPage';
 import SkirtsMeasurementPage from '@/pages/measurements/SkirtsMeasurementPage';
 import SareeMeasurementPage from '@/pages/measurements/SareeMeasurementPage';
+import TraditionalTopSkirtMeasurementPage from '@/pages/measurements/TraditionalTopSkirtMeasurementPage';
+import LehengaMeasurementPage from '@/pages/measurements/LehengaMeasurementPage';
+import FrockMeasurementPage from '@/pages/measurements/FrockMeasurementPage';
 
 function App() {
   return (
@@ -24,10 +28,14 @@ function App() {
             <Route path="/classes" element={<ClassesPage />} />
             <Route path="/stitching" element={<StitchingPage />} />
             <Route path="/stitching/chudi" element={<ChudiMeasurementPage />} />
-            <Route path="/stitching/pants" element={<PantsMeasurementPage />} />
+            <Route path="/stitching/pants" element={<PantsCategoryPage />} />
+            <Route path="/stitching/pants/:pantType" element={<PantsMeasurementPage />} />
             <Route path="/stitching/blouse" element={<BlouseMeasurementPage />} />
             <Route path="/stitching/skirts" element={<SkirtsMeasurementPage />} />
             <Route path="/stitching/saree" element={<SareeMeasurementPage />} />
+            <Route path="/stitching/traditional-top-skirt" element={<TraditionalTopSkirtMeasurementPage />} />
+            <Route path="/stitching/lehenga" element={<LehengaMeasurementPage />} />
+            <Route path="/stitching/frock" element={<FrockMeasurementPage />} />
           </Routes>
         </main>
         <Footer />

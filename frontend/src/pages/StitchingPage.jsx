@@ -36,7 +36,27 @@ export default function StitchingPage() {
       path: '/stitching/skirts',
       measurements: ['Waist', 'Hip', 'Length', 'Thigh', 'Bottom Width'],
     },
-   
+    {
+      title: 'Traditional Top & Skirt',
+      description: 'Classic festive set with tailored top and flowing skirt',
+      image: '/images/traditional-top-skirt.jpg',
+      path: '/stitching/traditional-top-skirt',
+      measurements: ['Bust', 'Waist', 'Hip', 'Shoulder', 'Sleeve', 'Top Length', 'Skirt Length'],
+    },
+    {
+      title: 'Lehenga',
+      description: 'Elegant lehengas with intricate detailing and perfect fit',
+      image: '/images/lehenga.jpg',
+      path: '/stitching/lehenga',
+      measurements: ['Bust', 'Waist', 'Hip', 'Blouse Length', 'Sleeve', 'Lehenga Length', 'Dupatta Length'],
+    },
+    {
+      title: 'Frock',
+      description: 'Graceful frocks with flared silhouettes and detailed yokes',
+      image: '/images/frock.jpg',
+      path: '/stitching/frock',
+      measurements: ['Bust', 'Waist', 'Hip', 'Shoulder', 'Sleeve', 'Frock Length'],
+    },
   ];
 
   return (

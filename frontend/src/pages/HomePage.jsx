@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/react/button';
 import { Card, CardContent } from '@/components/react/card';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/react/carousel';
 import { GraduationCap, Scissors, Sparkles, Users, Award, Heart } from 'lucide-react';
 
 export default function HomePage() {
@@ -46,7 +47,21 @@ export default function HomePage() {
       image: '/images/skirts.jpg',
       path: '/stitching/skirts',
     },
-   
+    {
+      title: 'Frock',
+      image: '/images/frock.jpg',
+      path: '/stitching/frock',
+    },
+    {
+      title: 'Lehenga',
+      image: '/images/lehenga.jpg',
+      path: '/stitching/lehenga',
+    },
+    {
+      title: 'Traditional Top & Skirt',
+      image: '/images/traditional-top-skirt.jpg',
+      path: '/stitching/traditional-top-skirt',
+    },
   ];
 
   const features = [
@@ -157,34 +172,48 @@ export default function HomePage() {
               Custom Stitching Services
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Get perfectly fitted garments with our professional measurement-based stitching
+              Get perfectly fitted garments with our professional measurement-based stitching. Swipe right to see more services!
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {stitchingServices.map((service, index) => (
-              <Link key={index} to={service.path} className="group">
-                <Card className="overflow-hidden hover:shadow-xl transition-all duration-300">
-                  <div className="relative overflow-hidden aspect-[4/3]">
-                    <img
-                      src={service.image}
-                      alt={service.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                    <h3 className="absolute bottom-4 left-4 font-serif font-semibold text-xl text-white">
-                      {service.title}
-                    </h3>
-                  </div>
-                  <CardContent className="p-4">
-                    <Button variant="ghost" className="w-full group-hover:bg-primary/10">
-                      Get Measurements
-                    </Button>
-                  </CardContent>
-                </Card>
-              </Link>
-            ))}
-          </div>
+          <Carousel 
+            className="w-full"
+            opts={{
+              align: "start",
+              loop: false,
+              dragFree: true,
+              containScroll: "trimSnaps",
+            }}
+          >
+            <CarouselContent className="-ml-4">
+              {stitchingServices.map((service, index) => (
+                <CarouselItem key={index} className="pl-4 basis-full sm:basis-1/2 lg:basis-1/4">
+                  <Link to={service.path} className="group block">
+                    <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 h-full">
+                      <div className="relative overflow-hidden aspect-[4/3]">
+                        <img
+                          src={service.image}
+                          alt={service.title}
+                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <h3 className="absolute bottom-4 left-4 font-serif font-semibold text-xl text-white">
+                          {service.title}
+                        </h3>
+                      </div>
+                      <CardContent className="p-4">
+                        <Button variant="ghost" className="w-full group-hover:bg-primary/10">
+                          Get Measurements
+                        </Button>
+                      </CardContent>
+                    </Card>
+                  </Link>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="hidden md:flex -left-12 lg:-left-16" />
+            <CarouselNext className="hidden md:flex -right-12 lg:-right-16" />
+          </Carousel>
         </div>
       </section>
 

@@ -27,6 +27,16 @@ This document lists the image URLs that need to be updated with the actual image
 - **Should be**: Image 6 - Woman with black crop top and floral skirt (cream/off-white with green leaves and orange/peach flowers)
 - **Location**: `src/pages/StitchingPage.jsx` - services array, Skirts image property
 
+### Traditional Top & Skirt (New)
+- **Current**: Placeholder URL
+- **Should be**: Image - Traditional green blouse with yellow skirt (child model)
+- **Location**: `src/pages/StitchingPage.jsx` - services array, Traditional Top & Skirt image property
+
+### Lehenga (New)
+- **Current**: Placeholder URL
+- **Should be**: Image - Lavender lehenga with silver embroidery and matching dupatta
+- **Location**: `src/pages/StitchingPage.jsx` - services array, Lehenga image property
+
 ### Saree (New)
 - **Current**: Placeholder URL
 - **Should be**: Image 3 - Woman in traditional Indian attire (red blouse/choli with lehenga, front and back views)

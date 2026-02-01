@@ -19,10 +19,12 @@ Please add the following image files to the `public/images/` directory:
 ## Other Images
 
 9. **about.jpg** - About page image (traditional crafts)
+10. **traditional-top-skirt.jpg** - Traditional top and skirt set (child model, green blouse with yellow skirt)
+11. **lehenga.jpg** - Lavender lehenga with silver embroidery and matching dupatta
 
 ## Measurement Guide
 
-10. **measurement-comprehensive.svg** - Already created in `public/measurement-comprehensive.svg`
+12. **measurement-comprehensive.svg** - Already created in `public/measurement-comprehensive.svg`
    - This is the cartoon-style illustration with woman in profile showing multiple measurement points
 
 ## Instructions
